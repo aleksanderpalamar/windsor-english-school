@@ -129,13 +129,13 @@ export const QuizForm = () => {
                   <CardTitle>Legenda:</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <h2 className="mt-8">Here&apos;s a breakdown of the scoring:</h2>
-                  <p>0-34%: A1</p>
-                  <p>35-49%: A2</p>
-                  <p>50-64%: B1</p>
-                  <p>65-79%: B2</p>
-                  <p>80-94%: C1</p>
-                  <p>95-100%: C2</p>
+                  <h2 className="mt-8 text-zinc-500">Here&apos;s a breakdown of the scoring:</h2>
+                  <p className="text-zinc-500 text-sm">0-34%: A1</p>
+                  <p className="text-zinc-500 text-sm">35-49%: A2</p>
+                  <p className="text-zinc-500 text-sm">50-64%: B1</p>
+                  <p className="text-zinc-500 text-sm">65-79%: B2</p>
+                  <p className="text-zinc-500 text-sm">80-94%: C1</p>
+                  <p className="text-zinc-500 text-sm">95-100%: C2</p>
                 </CardContent>
               </Card>
               <LevelSeal level={level} />
