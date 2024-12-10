@@ -14,7 +14,7 @@ export const Footer = () => {
               (11) 3699-0011 / 11 3682-6681
             </p>
             <p className="text-zinc-400">
-              contato@windsor.com.br
+              Windsor.atendimento@gmail.com
             </p>
           </div>
         </div>
