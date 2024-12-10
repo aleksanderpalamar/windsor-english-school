@@ -3,7 +3,6 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Header } from "./(main)/_components/header";
 import { Footer } from "./(main)/_components/footer";
-import { Providers } from "@/providers/providers";
 
 const robotoFonts = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -26,13 +25,11 @@ export default function RootLayout({
       <body
         className={`${robotoFonts.variable} ${robotoFonts.className} antialiased`}
       >
-        <Providers>
-          <Header />
-          <main className="min-h-screen p-4">
-            {children}
-          </main>
-          <Footer />
-        </Providers>
+        <Header />
+        <main className="min-h-screen p-4">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
