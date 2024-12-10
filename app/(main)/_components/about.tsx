@@ -28,7 +28,7 @@ export const About = () => {
             <p className="font-bold text-sm mb-2">Como referência, a Windsor Idiomas, oferece:</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Floating Courses Card */}
-              <div className="bg-white rounded-xl p-3 shadow-lg z-20">
+              <div className="bg-softYellow rounded-xl p-3 shadow-lg z-20">
                 <ul className="text-xs text-gray-600">
                   <li className="flex items-center mt-2">
                     Material importado
@@ -46,7 +46,7 @@ export const About = () => {
               </div>
 
               {/* Floating Courses Card */}
-              <div className="bg-white rounded-xl p-3 shadow-lg z-20">
+              <div className="bg-softGreen rounded-xl p-3 shadow-lg z-20">
                 <ul className="text-xs text-gray-600">
                   <li className="flex items-center mt-2">
                     Aulas de pronúncia

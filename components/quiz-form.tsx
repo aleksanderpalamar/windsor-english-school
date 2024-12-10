@@ -7,6 +7,7 @@ import { Label } from "./ui/label"
 import { RadioGroup, RadioGroupItem } from "./ui/radio-group"
 import { LevelSeal } from "./level-seal"
 import { CongratsDialog } from "./congrats-dialog"
+import { cn } from "@/lib/utils"
 
 interface Question {
   id: number
@@ -158,8 +159,19 @@ export const QuizForm = () => {
                   className="flex flex-col space-y-1"
                 >
                   {question.options.map((option) => (
-                    <div key={option} className="flex items-center space-x-2">
-                      <RadioGroupItem value={option} id={`q${question.id}-${option}`} />
+                    <div key={option} className={cn(
+                      `flex items-center space-x-2 bg-softBlue p-4 rounded-md`,
+                      answers[question.id] === option && "text-vibrantRed"
+                    )}>
+                      <RadioGroupItem 
+                        value={option} 
+                        id={`q${question.id}-${option}`}
+                        checked={answers[question.id] === option}
+                        className={cn(
+                          `w-4 h-4`,
+                          answers[question.id] === option && "bg-vibrantRed"
+                        )}
+                      />
                       <Label htmlFor={`q${question.id}-${option}`}>{option}</Label>
                     </div>
                   ))}
@@ -168,7 +180,7 @@ export const QuizForm = () => {
             ))}
           </CardContent>
           <CardFooter>
-            <Button type="submit" className="w-fit bg-blue-500 hover:bg-blue-400 text-white">
+            <Button type="submit" className="w-fit bg-primaryBlue hover:bg-darkBlue text-white">
               Validar teste
             </Button>
           </CardFooter>

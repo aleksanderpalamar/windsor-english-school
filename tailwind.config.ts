@@ -10,6 +10,17 @@ export default {
   theme: {
   	extend: {
   		colors: {
+				primaryBlue: '#4A90E2', // Azul principal
+				softBlue: '#C6E0F7', // Azul claro
+        vibrantRed: '#D64550', // Vermelho vibrante
+				softRed: '#F7CAC9', // Vermelho claro
+        warmYellow: '#FFC857', // Amarelo quente
+				softYellow: '#FDF1A2', // Amarelo claro
+        lightGray: '#F5F5F5', // Cinza claro
+        softGreen: '#90DFAA', // Verde claro
+				darkGreen: '#006A4E', // Verde escuro
+        darkBlue: '#2C3E50', // Azul escuro (para rodapé)
+				darkGray: '#333333', // Cinza escuro (para rodapé)
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

@@ -46,8 +46,8 @@ export default function CourseEnglish() {
           <h2 className="text-2xl font-bold mb-2">Inglês para Adultos</h2>
           {cardData[0].map((item, index) => (
             <Card key={index} className="mb-4 overflow-hidden border-none rounded-xl">
-              <CardHeader className="relative bg-blue-100 flex flex-col">
-              <div className="absolute right-0 top-0 w-[128px] h-[128px] bg-blue-200 rounded-full -translate-y-1/4 translate-x-1/4 hidden lg:block" />
+              <CardHeader className="relative bg-softBlue flex flex-col">
+              <div className="absolute right-0 top-0 w-[128px] h-[128px] bg-primaryBlue rounded-full -translate-y-1/4 translate-x-1/4 hidden lg:block" />
                 <CardTitle className="relative">{item.title}</CardTitle>
                 <CardDescription className="ml-auto relative">{item.level}</CardDescription>
               </CardHeader>
@@ -61,8 +61,8 @@ export default function CourseEnglish() {
           <h2 className="text-2xl font-bold mb-2">Inglês para Crianças</h2>
           {cardData[1].map((item, index) => (
             <Card key={index} className="mb-4 overflow-hidden border-none rounded-xl">
-              <CardHeader className="relative bg-blue-100 flex flex-col">
-              <div className="absolute right-0 top-0 w-[128px] h-[128px] bg-blue-200 rounded-full -translate-y-1/4 translate-x-1/4 hidden lg:block" />
+              <CardHeader className="relative bg-softYellow flex flex-col">
+              <div className="absolute right-0 top-0 w-[128px] h-[128px] bg-warmYellow rounded-full -translate-y-1/4 translate-x-1/4 hidden lg:block" />
                 <CardTitle className="relative">{item.title}</CardTitle>
                 <CardDescription className="relative ml-auto">{item.level}</CardDescription>
               </CardHeader>
@@ -72,8 +72,8 @@ export default function CourseEnglish() {
             </Card>
           ))}
           <Card className="mb-4 overflow-hidden border-none rounded-xl">
-            <CardContent className="bg-blue-100 p-2">
-              <p className="text-sm font-bold text-blue-500">
+            <CardContent className="bg-softGreen p-2">
+              <p className="text-sm font-bold text-darkGreen">
                 KIDS, TEENS BASIC I, II E III, PRÉ-INTERMEDIATE, INTERMEDIATE, UPPER INTERMEDIATE E ADVANCED
               </p>
             </CardContent>

@@ -41,7 +41,7 @@ export const Header = () => {
   }, [])
 
   return (
-    <nav className="bg-zinc-950 text-zinc-50 border-b border-zinc-800">
+    <nav className="bg-darkBlue text-zinc-50 border-b border-zinc-800">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="text-2xl font-bold flex flex-col space-y-1 text-red-500">
@@ -52,7 +52,7 @@ export const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`ml-4 hover:text-red-300 ${pathname === item.href ? 'text-red-500' : ''
+                className={`ml-4 hover:text-softRed ${pathname === item.href ? 'text-vibrantRed' : ''
                   }`}
               >
                 {item.name}

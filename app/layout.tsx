@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Header } from "./(main)/_components/header";
 import { Footer } from "./(main)/_components/footer";
 
-const robotoFonts = Roboto({
-  weight: ["100", "300", "400", "500", "700", "900"],
+const poppinsFonts = Poppins({
   subsets: ["latin"],
-  variable: "--font-roboto",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${robotoFonts.variable} ${robotoFonts.className} antialiased`}
+        className={`bg-gray-50 text-darkGray ${poppinsFonts.className} antialiased`}
       >
         <Header />
         <main className="min-h-screen p-4">

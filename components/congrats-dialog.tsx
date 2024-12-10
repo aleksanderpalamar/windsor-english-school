@@ -30,7 +30,7 @@ export function CongratsDialog({ isOpen, onClose, level, score }: CongratsDialog
         </div>
         <Button 
           onClick={onClose} 
-          className="w-fit bg-red-500 hover:bg-red-400 text-white">
+          className="w-fit bg-vibrantRed hover:bg-softRed focus:ring-2 focus:ring-offset-2 focus:ring-vibrantRed text-white">
             Fechar
         </Button>
       </DialogContent>

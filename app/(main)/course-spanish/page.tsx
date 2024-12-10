@@ -29,9 +29,9 @@ export default function CourseSpanish() {
           <h2 className="text-2xl font-bold mb-2">Espanhol para Adultos</h2>
           {cardData[0].map((item, index) => (
             <Card key={index} className="mb-4 overflow-hidden border-none rounded-xl">
-              <CardHeader className="relative bg-blue-100 flex flex-col">
-                <div className="absolute right-0 top-0 w-[128px] h-[128px] bg-blue-200 rounded-full -translate-y-1/4 translate-x-1/4 hidden lg:block" />
-                <CardTitle className="relative">{item.title}</CardTitle>
+              <CardHeader className="relative bg-softYellow flex flex-col">
+                <div className="absolute right-0 top-0 w-[128px] h-[128px] bg-warmYellow rounded-full -translate-y-1/4 translate-x-1/4 hidden lg:block" />
+                <CardTitle className="relative text-vibrantRed">{item.title}</CardTitle>
                 <CardDescription className="relative ml-auto">{item.level}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-2 p-2">
