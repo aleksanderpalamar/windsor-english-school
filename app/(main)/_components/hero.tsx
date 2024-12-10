@@ -33,7 +33,7 @@ export const Hero = () => {
             <div className="absolute right-0 top-0 w-[600px] h-[600px] bg-darkBlue rounded-full -translate-y-1/4 translate-x-1/4 hidden lg:block" />
 
             {/* Main Image */}
-            <div className="container mx-auto px-4 py-6">
+            <div className="relative z-10">
               <ImageCarousel images={images} />
             </div>
           </div>
