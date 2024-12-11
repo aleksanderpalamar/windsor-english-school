@@ -3,14 +3,12 @@
 Este é um projeto de uma aplicação web para a escola de idiomas Windsor, desenvolvida utilizando a tecnologia Next.js.
 
 ## Tecnologias Utilizadas
-- Next.js: Framework para desenvolvimento de aplicações web
-- React: Biblioteca para construção de interfaces de usuário
-- TypeScript: Linguagem de programação para desenvolvimento de aplicações web
-- CSS: Linguagem de estilo para definição de layouts e estilos
-- HTML: Linguagem de marcação para definição de estrutura de conteúdo
+- [Next.js](https://nextjs.org/) Framework para construção de aplicações web
+- [TypeScript](https://www.typescriptlang.org/) Linguagem de programação para desenvolvimento de aplicações web
+- [Tailwind CSS](https://tailwindcss.com/) Framework de CSS
+- [Shadcn/ui](https://ui.shadcn.com/) Biblioteca de componentes UI
 
 ## Como Rodar o Projeto
-
 
 **Ambiente de Desenvolvimento (Dev)**
 Para rodar o projeto em um ambiente de desenvolvimento, siga os seguintes passos:
