@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Landing Page Windsor Idiomas
 
-## Getting Started
+Este é um projeto de uma aplicação web para a escola de idiomas Windsor, desenvolvida utilizando a tecnologia Next.js.
 
-First, run the development server:
+## Tecnologias Utilizadas
+- Next.js: Framework para desenvolvimento de aplicações web
+- React: Biblioteca para construção de interfaces de usuário
+- TypeScript: Linguagem de programação para desenvolvimento de aplicações web
+- CSS: Linguagem de estilo para definição de layouts e estilos
+- HTML: Linguagem de marcação para definição de estrutura de conteúdo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Como Rodar o Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Ambiente de Desenvolvimento (Dev)**
+Para rodar o projeto em um ambiente de desenvolvimento, siga os seguintes passos:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Instale as dependências do projeto executando o comando `npm install` ou `yarn install` no terminal.
+Execute o comando `npm run dev` ou `yarn dev` para iniciar o servidor de desenvolvimento.
+Abra o navegador e acesse o endereço `http://localhost:3000` para visualizar a aplicação.
 
-## Learn More
+**Ambiente de Produção (Prod)**
 
-To learn more about Next.js, take a look at the following resources:
+Para rodar o projeto em um ambiente de produção, siga os seguintes passos:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Instale as dependências do projeto executando o comando `npm install` ou `yarn install` no terminal.
+Execute o comando `npm run build` ou `yarn build` para gerar a build da aplicação.
+Execute o comando npm run start ou yarn start para iniciar o servidor de produção.
+Abra o navegador e acesse o endereço `http://localhost:3000` para visualizar a aplicação.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Recursos Utilizados**
 
-## Deploy on Vercel
+`next/font`: Utilizado para otimizar e carregar a fonte Geist.
+`create-next-app`: Utilizado para criar o projeto Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Licença
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto é licenciado sob a licença MIT.
