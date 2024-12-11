@@ -1,12 +1,12 @@
 import { z } from "zod";
 
 export const contactFormSchema = z.object({
-  name: z.string().min(2, { message: "Nome deve ter pelo menos 2 caracteres" }),
+  nome: z.string().min(1, { message: "Nome é obrigatório" }),
   email: z.string().email({ message: "Email inválido" }),
-  phone: z.string().min(10, { message: "Telefone deve ter pelo menos 10 dígitos" }),
-  celular: z.string().min(10, { message: "Celular deve ter pelo menos 10 dígitos" }),
-  subject: z.string().min(3, { message: "Assunto deve ter pelo menos 3 caracteres" }),
-  message: z.string().min(3, { message: "Mensagem deve ter pelo menos 3 caracteres" }),
+  telefone: z.string().min(1, { message: "Telefone é obrigatório" }),
+  celular: z.string().min(1, { message: "Celular é obrigatório" }),
+  assunto: z.string().min(1, { message: "Assunto é obrigatório" }),
+  mensagem: z.string().min(1, { message: "Mensagem é obrigatória" }),
   attachment: z.custom<FileList>()
     .transform((file) => file?.[0])
     .optional()

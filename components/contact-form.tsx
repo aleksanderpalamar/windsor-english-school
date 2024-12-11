@@ -25,12 +25,12 @@ export const ContactForm = () => {
       const formData = new FormData()
       
       // Adiciona campos básicos
-      formData.append('name', data.name)
+      formData.append('nome', data.nome)
       formData.append('email', data.email)
-      formData.append('phone', data.phone)
+      formData.append('telefone', data.telefone)
       formData.append('celular', data.celular)
-      formData.append('subject', data.subject)
-      formData.append('message', data.message)
+      formData.append('assunto', data.assunto)
+      formData.append('mensagem', data.mensagem)
       
       // Adiciona arquivo se existir
       if (data.attachment) {
@@ -59,110 +59,110 @@ export const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-          Name
+        <label htmlFor="nome" className="block text-sm font-medium text-gray-700">
+          Nome
         </label>
         <Input
-          {...register("name")}
+          {...register("nome")}
           type="text"
-          id="name"
+          id="nome"
           className="mt-1 block w-full rounded-md bg-zinc-100 border-zinc-300 shadow-sm 
-                focus:border-primaryBlue focus:ring focus:ring-primaryBlue focus:ring-opacity-50"
+                focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
         />
-        {errors.name && (
-          <p className="mt-1 text-sm text-vibrantRed">{errors.name.message}</p>
+        {errors.nome && (
+          <p className="mt-1 text-sm text-red-600">{errors.nome.message}</p>
+        )}
+      </div>
+      <div>
+        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+          Email
+        </label>
+        <Input
+          {...register("email")}
+          type="email"
+          id="email"
+          className="mt-1 block w-full rounded-md bg-zinc-100 border-zinc-300 shadow-sm 
+                focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+        />
+        {errors.email && (
+          <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
         )}
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-darkGray">
-            Email
+          <label htmlFor="telefone" className="block text-sm font-medium text-gray-700">
+            Telefone
           </label>
           <Input
-            {...register("email")}
-            type="email"
-            id="email"
-            className="mt-1 block w-full rounded-md bg-zinc-100 border-zinc-300 shadow-sm 
-                focus:border-primaryBlue focus:ring focus:ring-primaryBlue focus:ring-opacity-50"
-          />
-          {errors.email && (
-            <p className="mt-1 text-sm text-vibrantRed">{errors.email.message}</p>
-          )}
-        </div>
-        <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-darkGray">
-            Phone:
-          </label>
-          <Input
-            {...register("phone")}
+            {...register("telefone")}
             type="tel"
-            id="phone"
+            id="telefone"
             className="mt-1 block w-full rounded-md bg-zinc-100 border-zinc-300 shadow-sm 
-                focus:border-primaryBlue focus:ring focus:ring-primaryBlue focus:ring-opacity-50"
+                focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
           />
-          {errors.phone && (
-            <p className="mt-1 text-sm text-vibrantRed">{errors.phone.message}</p>
+          {errors.telefone && (
+            <p className="mt-1 text-sm text-red-600">{errors.telefone.message}</p>
           )}
         </div>
         <div>
-          <label htmlFor="celular" className="block text-sm font-medium text-darkGray">
-            Celular:
+          <label htmlFor="celular" className="block text-sm font-medium text-gray-700">
+            Celular
           </label>
           <Input
             {...register("celular")}
             type="tel"
             id="celular"
             className="mt-1 block w-full rounded-md bg-zinc-100 border-zinc-300 shadow-sm 
-                focus:border-primaryBlue focus:ring focus:ring-primaryBlue focus:ring-opacity-50"
+                focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
           />
-          {errors.phone && (
-            <p className="mt-1 text-sm text-vibrantRed">{errors.phone.message}</p>
+          {errors.celular && (
+            <p className="mt-1 text-sm text-red-600">{errors.celular.message}</p>
           )}
         </div>
       </div>
       <div>
-        <label htmlFor="subject" className="block text-sm font-medium text-darkGray">
-          Subject
+        <label htmlFor="assunto" className="block text-sm font-medium text-gray-700">
+          Assunto
         </label>
         <Input
-          {...register("subject")}
+          {...register("assunto")}
           type="text"
-          id="subject"
+          id="assunto"
           className="mt-1 block w-full rounded-md bg-zinc-100 border-zinc-300 shadow-sm 
-                focus:border-primaryBlue focus:ring focus:ring-primaryBlue focus:ring-opacity-50"
+                focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
         />
-        {errors.subject && (
-          <p className="mt-1 text-sm text-vibrantRed">{errors.subject.message}</p>
+        {errors.assunto && (
+          <p className="mt-1 text-sm text-red-600">{errors.assunto.message}</p>
         )}
       </div>
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-darkGray">
-          Message
+        <label htmlFor="mensagem" className="block text-sm font-medium text-gray-700">
+          Mensagem
         </label>
         <Textarea
-          {...register("message")}
-          id="message"
+          {...register("mensagem")}
+          id="mensagem"
           rows={4}
           className="mt-1 block w-full rounded-md bg-zinc-100 border-zinc-300 shadow-sm 
-                focus:border-primaryBlue focus:ring focus:ring-primaryBlue focus:ring-opacity-50"
+                focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 resize-none"
         />
-        {errors.message && (
-          <p className="mt-1 text-sm text-vibrantRed">{errors.message.message}</p>
+        {errors.mensagem && (
+          <p className="mt-1 text-sm text-red-600">{errors.mensagem.message}</p>
         )}
       </div>
       <div>
-        <label htmlFor="attachment" className="block text-sm font-medium text-darkGray">
-          Attachment (optional)
+        <label htmlFor="attachment" className="block text-sm font-medium text-gray-700">
+          Anexo (opcional)
         </label>
         <Input
           {...register("attachment")}
           type="file"
           id="attachment"
           className="mt-1 block w-full rounded-md bg-zinc-100 border-zinc-300 shadow-sm 
-                focus:border-primaryBlue focus:ring focus:ring-primaryBlue focus:ring-opacity-50"
+                focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
         />
         {errors.attachment && (
-          <p className="mt-1 text-sm text-vibrantRed">
+          <p className="mt-1 text-sm text-red-600">
             {errors.attachment.message}
           </p>
         )}
@@ -173,8 +173,8 @@ export const ContactForm = () => {
           disabled={isSubmitting}
           className="w-fit ml-auto flex justify-center items-center px-4 py-2 
                 border border-transparent rounded-md shadow-sm text-sm font-medium 
-                text-white bg-primaryBlue hover:bg-darkBlue focus:outline-none 
-                focus:ring-2 focus:ring-offset-2 focus:ring-primaryBlue
+                text-white bg-blue-500 hover:bg-blue-400 focus:outline-none 
+                focus:ring-2 focus:ring-offset-2 focus:ring-blue-500
                 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
